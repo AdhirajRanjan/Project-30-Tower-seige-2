@@ -26,7 +26,7 @@ class Chain{
 
     attach(b)
     {
-        this.sling.bodyA = b;
+        this.chain.bodyA = b;
     }
     
 }

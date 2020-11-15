@@ -5,7 +5,7 @@ class Box{
           friction:0.0,
           density:1.0
       }
-      this.visibility = 225;
+      this.Visibility = 225;
       this.body = Bodies.rectangle(x, y, width, height, options);
       this.width = width;
       this.height = height;
@@ -13,7 +13,7 @@ class Box{
     }
     display(){
       //console.log(this.body.speed)
-      if (this.body.speed <3)
+      if (this.body.speed <2)
       {
         var angle = this.body.angle;
         var pos = this.body.position;
@@ -28,7 +28,8 @@ class Box{
     {
       World.remove(world, this.body)
       push();
-      this.visibility = this.visibility -5;
+      this.Visibility = this.Visibility -5;
+      tint(255,this.Visibility);
       pop()
     }
   }

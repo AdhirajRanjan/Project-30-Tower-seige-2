@@ -107,14 +107,14 @@ function draw() {
   image(polygonimg,polygon.position.x,polygon.position.y,50,50)
 
   
-  
+  Engine.update(engine)
   
   drawSprites();
 }
 
 function mouseDragged() 
 {
-    Matter.Body.setPosition(polygon.body, {x:mouseX,y:mouseY})
+    Matter.Body.setPosition(polygon, {x:mouseX,y:mouseY})
 }
 
 function mouseReleased() 
